@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# aliases.sh
+
+# User aliases
+alias del='rm -rf *~ \#*'
+
+# SSH Aliases
+alias dirac='ssh -X -C dirac.che.rpi.edu'
+alias boltzmann='ssh -X -C boltzmann.che.rpi.edu'
+alias lion='ssh -X -C lion.che.rpi.edu'
+alias tiger='ssh -X -C tiger.che.rpi.edu'
+alias calvin='ssh -X -C calvin.che.rpi.edu'
+
+# Application aliases for MAC OS X
+alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
+
+# Anaconda Python
+alias pyload='source $HOME/Software/anaconda/bin/activate'
+alias pyunload='source $HOME/Software/anaconda/bin/deactivate'
+
+
+
+
+

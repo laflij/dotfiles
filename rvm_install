@@ -1,0 +1,14 @@
+#!/bin/bash	
+
+# Script to install rvm and some ruby gems for web development
+
+# Install RVM
+curl -sSL https://get.rvm.io | bash -s
+
+# Make sure that the rvm path is added to bashrc
+
+# Install Ruby gems
+rvm install ruby
+gem install jekyll
+gem install kramdown
+

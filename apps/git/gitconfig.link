@@ -1,0 +1,9 @@
+[user]
+	name = Vasudevan Venkateshwaran
+	email = vasu.chemical@gmail.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[core]
+	excludesfile = ~/.gitignore_global
