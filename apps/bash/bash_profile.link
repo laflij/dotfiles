@@ -14,9 +14,10 @@ else
     . $(brew --prefix)/etc/bash_completion
 fi
 
-# Add Homebrew to the path 
+# Add Homebrew and Modules to the path 
 export BREW="/usr/local/bin"
-export PATH="$BREW:$PATH"
+export MODU="/Users/venkav2/Software/modules/Modules/3.2.10/bin"
+export PATH="$BREW:$MODU:$PATH"
 
 # Ruby RVM
 # Add RVM to PATH for scripting
