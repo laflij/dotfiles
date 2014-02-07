@@ -4,6 +4,7 @@
 
 # Get current directory path
 DIR="`pwd`"
+DPATH=$DIR/apps
 
 # Shell colors
 red='\e[0;31m'
@@ -65,8 +66,6 @@ configure_version_control ()
 }
 
 # Link dotfiles
-DPATH=$DIR/dotfiles
-
 link_files () 
 {
     ln -s $1 $2
@@ -99,7 +98,7 @@ link_dotfiles ()
 copy_dotfiles () 
 {
     info 'Copying dotfiles to the home directory'
-    for source in `find $DPATH -maxdepth 1 -name \*.link`
+    for source in `find $DPATH -maxdepth 2 -name \*.link`
     do
 	dest="$HOME/.`basename \"${source%.*}\"`"
 	if [ -f $dest -o -d $dest ]
