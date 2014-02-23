@@ -4,6 +4,7 @@
 
 # User aliases
 alias del='rm -rf *~ \#*'
+alias ls='ls -GFh'
 
 # SSH Aliases
 alias dirac='ssh -Y -C dirac.che.rpi.edu'
