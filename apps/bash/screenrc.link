@@ -1,0 +1,26 @@
+
+# screenrc
+
+# Escape character
+escape ^Bz
+
+# Startup message
+startup_message off
+
+# Autodetach
+autodetach on
+
+# Display a caption string below, 
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][ %= %{kW}%-w%{wO}%n %t%{-}%+w %-=][%{B}%D %Y-%m-%d %{B}%C %A %{g}]'
+
+# Scrollback. 
+defscrollback 30000   
+
+# Allow xterm / Terminal scrollbars to access the scrollback buffer. This 
+# enables the behavior you'd expect, instead of losing the content that scrolls 
+# out of the window. 
+termcapinfo xterm-256color|xterm-color|xterm|xterms|xs|rxvt ti@:te@
+
+# Visual bell 
+vbell off
