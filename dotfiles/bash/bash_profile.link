@@ -1,16 +1,30 @@
-# prompt.sh 
+# .bash_profile
 
+# User aliases 
+alias del='rm -rf *~ \#*'
+alias ls='ls -GFh'
+
+# Application aliases for MAC OS X
+# to be added later
+
+# Anaconda Python
+alias activate='source $HOME/Software/anaconda/bin/activate'
+alias deactivate='source $HOME/Software/anaconda/bin/deactivate'
+# -------------------------------------------------------------
+
+# Set up the terminal 
+# promt
 COMPUTER=${HOSTNAME%%.*}
 
-# Terminal colors
+# colors
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 
-# Basic command prompt
+# git branch version control 
+source ~/.git-prompt.sh
 PS1="\u@${COMPUTER} \W $ "
 
-# Command prompt to display version control information
 if [ __git_ps1 -a hg ]
 then
     function be_get_branch {
@@ -35,3 +49,9 @@ then
     export GIT_PS1_SHOWDIRTYSTATE=yes
     export PS1="\u@${COMPUTER} \W \$(be_get_branch "$2") $ ";
 fi
+# -------------------------------------------------------------
+
+# PATH
+# Homebrew
+export BREW="/usr/local/bin"
+export PATH="$BREW:$PATH"

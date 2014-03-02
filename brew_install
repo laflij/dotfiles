@@ -13,8 +13,7 @@ then
 	> /tmp/homebrew-install.log
 fi
 
-# Check if homebrew installation is working correctly
-brew doctor
+read -p "Be sure to run 'brew doctor' first. Press [Enter] key to start script or [ctrl-c] to quit."
 
 # Make sure we’re using the latest Homebrew
 brew update
@@ -38,9 +37,12 @@ brew install wget --enable-iri
 
 # Install other useful binaries
 brew install git
-brew install mercurial
-brew install imagemagick
 brew install tree
+brew install macvim
+brew install imagemagick
+brew install ghostscript
+brew install gnuplot --qt --latex --cairo
+#brew install mercurial
 
 # Remove outdated versions from the cellar
 brew cleanup
