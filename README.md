@@ -7,27 +7,29 @@ directory structure:
 ```
 .
 ├── README.md
-├── apps
-│   ├── bash
-│   │   ├── aliases.link
-│   │   ├── bash_profile.link
-│   │   ├── functions.link
-│   │   └── prompt.link
-│   ├── emacs
-│   │   ├── emacs.d.link
-│   │   └── emacs.link
-│   ├── git
-│   │   ├── gitconfig.link
-│   │   └── gitignore_global.link
-│   └── hg
-│       ├── hgignore_global.link
-│       └── hgrc.link
 ├── brew_install
-├── brew_uninstall
-├── install.sh
 ├── rvm_install
-├── uninstall.sh
-└── update.sh
+├── dotfiles
+│   ├── install.sh
+│   ├── uninstall.sh
+│   ├── update.sh
+│   ├── bash
+│   │   ├── bash_profile.link
+│   │   └── screenrc.link
+│   ├── git
+│   │   ├── git-prompt.link
+│   │   ├── gitconfig.link
+│   │   ├── gitconfig.template
+│   │   └── gitignore_global.link
+│   ├── python
+│   │   └── matplotlib
+│   │       └── matplotlibrc
+│   └── vim
+│       └── vimrc.link
+└── osx-terminal.app-colors-solarized
+    ├── README.md
+    ├── Solarized\ Dark.terminal
+    └── Solarized\ Light.terminal
 ```
 
 ## Install

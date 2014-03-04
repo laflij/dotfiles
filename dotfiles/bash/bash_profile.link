@@ -8,6 +8,7 @@ alias ls='ls -GFh'
 # to be added later
 
 # Anaconda Python
+alias conda='$HOME/Software/anaconda/bin/conda'
 alias activate='source $HOME/Software/anaconda/bin/activate'
 alias deactivate='source $HOME/Software/anaconda/bin/deactivate'
 # -------------------------------------------------------------
