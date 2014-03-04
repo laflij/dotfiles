@@ -1,11 +1,7 @@
 [user]
 	name = Jeremy Laflin
 	email = laflijj@gmail.com
-[color]
-	diff = auto
-	status = auto
-	branch = auto
-[core]
-	excludesfile = ~/.gitignore_global
 [credential]
 	helper = osxkeychain
+[core]
+	excludesfile = /Users/laflij/Software/system-config/dotfiles/git/.gitignore_global
