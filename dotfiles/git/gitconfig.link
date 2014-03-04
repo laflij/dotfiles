@@ -7,3 +7,5 @@
 	branch = auto
 [core]
 	excludesfile = ~/.gitignore_global
+[credential]
+	helper = osxkeychain
