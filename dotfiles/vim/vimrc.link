@@ -9,6 +9,7 @@ filetype plugin indent on
 colorscheme solarized
 if has('gui_running')
     set background=dark
+    set guifont=Monaco:h12
 else
     set background=light
 endif
