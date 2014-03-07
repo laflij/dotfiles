@@ -4,6 +4,8 @@ execute pathogen#infect()
 " Basics
 syntax on
 filetype plugin indent on
+:set nu
+:set linebreak
 
 " Solarized
 colorscheme solarized

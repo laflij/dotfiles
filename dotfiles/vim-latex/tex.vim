@@ -31,3 +31,7 @@ let g:Tex_FormatDependency_dvipdf = 'dvi,dvipdf'
 
 " Set multiple compile rule for bibtex 
 let g:Tex_MultipleCompileFormats='pdf'
+
+" For Latex files re-map gj and jk to j and k 
+:nnoremap k gk
+:nnoremap j gj
