@@ -35,3 +35,9 @@ let g:Tex_MultipleCompileFormats='pdf'
 " For Latex files re-map gj and jk to j and k 
 :nnoremap k gk
 :nnoremap j gj
+
+" Specify indentation
+set sw=2
+" Set Keyword to ':' so we can cycle through figs and eqn's
+"  type in \ref{fig: and press <C-n> you will automatically cycle through figs
+set iskeyword+=:
