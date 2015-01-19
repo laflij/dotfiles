@@ -22,7 +22,7 @@ brew update
 brew upgrade
 
 # Install GNU core utilities (those that come with OS X are outdated)
-brew install coreutils
+# brew install coreutils
 
 echo "Don’t forget to add $(brew --prefix coreutils)/libexec/gnubin to \$PATH."
 
@@ -39,9 +39,9 @@ brew install wget --enable-iri
 brew install git
 brew install tree
 brew install macvim
-brew install imagemagick
 brew install ghostscript
-brew install gnuplot --qt --latex --cairo
+brew install gnuplot --with-latex --with-cairo
+brew install inkscape
 #brew install mercurial
 
 # Remove outdated versions from the cellar

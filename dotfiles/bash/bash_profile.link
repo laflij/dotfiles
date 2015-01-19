@@ -3,6 +3,8 @@
 # User aliases 
 alias del='rm -rf *~ \#*'
 alias ls='ls -GFh'
+# using gnucoreutils so it's gls
+# alias ls='gls --color'
 
 # Application aliases for MAC OS X
 # to be added later
@@ -61,3 +63,4 @@ export PATH="~/Software/moltemplate_2014-3-03/src:$PATH"
 # Homebrew
 export BREW="/usr/local/bin"
 export PATH="$BREW:$PATH"
+# export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"

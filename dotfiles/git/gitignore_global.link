@@ -40,6 +40,9 @@
 *.png
 *.jpg
 *.jpeg
+*.bbl
+*.blg
+*.nlo
 
 # Logs and databases
 # ------------------
