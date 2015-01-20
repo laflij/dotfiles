@@ -108,6 +108,7 @@ rm -rf ~/.bash_profile
 
 # Delete osx gitconfig
 rm -rf ~/.gitconfig
+rm -rf ~/.gitconfig-ubuntu
 # link ubuntu vimrc correctly
 ln -s ~/Software/system-config/dotfiles/git/gitconfig-ubuntu.link ~/.gitconfig
 
