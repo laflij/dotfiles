@@ -102,5 +102,9 @@ link_files $source $dest
 # Link dotfiles functions
 symlink_dotfiles
 
+# Remove Ubuntu stuff
+rm -rf ~/.vimrc-ubuntu
+rm -rf ~/.bashrc
+
 # Source .bash_profile
 source $HOME/.bash_profile
