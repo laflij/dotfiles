@@ -93,8 +93,14 @@ alias l='ls -CF'
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
-# MY Alias definitions.
+# MY Alias definitions. 
 alias del="trash-put"
+alias mvim="gvim"
+
+# Use an alias for anaconda so it doesn't interfere with PATH
+alias conda="~/Software/anaconda/bin/conda"
+alias activate="source ~/Software/anaconda/bin/activate"
+alias deactivate="source ~/Software/anaconda/bin/deactivate"
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -115,3 +121,12 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# Enviornment Setup
+# CUDA 
+export PATH=/usr/local/cuda-6.5/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-6.5/lib64:$LD_LIBRARY_PATH
+
+# Git prompt completion
+source /etc/bash_completion.d/git-prompt
+export PS1='\w$(__git_ps1 "(%s)") > '
