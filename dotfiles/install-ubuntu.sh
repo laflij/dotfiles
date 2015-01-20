@@ -105,5 +105,11 @@ ln -s ~/Software/system-config/dotfiles/vim/vimrc-ubuntu.link ~/.vimrc
 
 # Delete ~/.bash_profile (osx)
 rm -rf ~/.bash_profile
+
+# Delete osx gitconfig
+rm -rf ~/.gitconfig
+# link ubuntu vimrc correctly
+ln -s ~/Software/system-config/dotfiles/git/gitconfig-ubuntu.link ~/.gitconfig
+
 # Source .bashrc
 source $HOME/.bashrc

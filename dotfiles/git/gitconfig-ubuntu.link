@@ -1,0 +1,5 @@
+[user]
+	name = Jeremy Laflin
+	email = laflijj@gmail.com
+[core]
+	excludesfile = ~/Software/system-config/dotfiles/git/.gitignore_global
