@@ -4,4 +4,4 @@
 [credential]
 	helper = osxkeychain
 [core]
-	excludesfile = /Users/laflij/Software/system-config/dotfiles/git/.gitignore_global
+	excludesfile = /home/laflij/Software/system-config/dotfiles/git/.gitignore_global
