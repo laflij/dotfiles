@@ -96,11 +96,15 @@ copy_files $source $dest
 
 # Copy tex.vim (for vim-latex modifications)
 source="$HOME/Software/system-config/dotfiles/vim-latex/tex.vim"
-dest="$HOME/.vim/bundle/vim-latex-1.8.23/ftplugin/tex.vim"
+dest="$HOME/.vim/bundle/vim-latex/ftplugin/tex.vim"
 link_files $source $dest
 
 # Link dotfiles functions
 symlink_dotfiles
+
+# Remove Ubuntu stuff
+rm -rf ~/.vimrc-ubuntu
+rm -rf ~/.bashrc
 
 # Source .bash_profile
 source $HOME/.bash_profile

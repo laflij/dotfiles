@@ -1,0 +1,66 @@
+# .bash_profile
+
+# User aliases 
+alias del='rm -rf *~ \#*'
+alias ls='ls -GFh'
+# using gnucoreutils so it's gls
+# alias ls='gls --color'
+
+# Application aliases for MAC OS X
+# to be added later
+
+# Anaconda Python
+alias conda='$HOME/Software/anaconda/bin/conda'
+alias activate='source $HOME/Software/anaconda/bin/activate'
+alias deactivate='source $HOME/Software/anaconda/bin/deactivate'
+
+# VMD
+alias vmd="/Applications/VMD\ 1.9.1.app/Contents/vmd/vmd_MACOSXX86"
+# -------------------------------------------------------------
+
+# Set up the terminal 
+# promt
+COMPUTER=${HOSTNAME%%.*}
+
+# colors
+export CLICOLOR=1
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+
+
+# git branch version control 
+source ~/.git-prompt.sh
+PS1="\u@${COMPUTER} \W $ "
+
+if [ __git_ps1 -a hg ]
+then
+    function be_get_branch {
+	local dir="$PWD"
+	local vcs
+	local nick
+	while [[ "$dir" != "/" ]]; do
+	    for vcs in git hg; do
+		if [[ -d "$dir/.$vcs" ]] && hash "$vcs" &>/dev/null; then
+		    case "$vcs" in
+			git) __git_ps1 "${1:-(%s) }"; return;;
+			hg) nick=$(hg branch 2>/dev/null);;
+		    esac
+		    [[ -n "$nick" ]] && printf "${1:-(%s) }" "$nick"
+		    return 0
+		fi
+	    done
+	    dir="$(dirname "$dir")"
+	done
+    }
+    
+    export GIT_PS1_SHOWDIRTYSTATE=yes
+    export PS1="\u@${COMPUTER} \W \$(be_get_branch "$2") $ ";
+fi
+# -------------------------------------------------------------
+
+# PATH
+# Moltemplate
+export PATH="~/Software/moltemplate_2014-3-03/src:$PATH"
+# Homebrew
+export BREW="/usr/local/bin"
+export PATH="$BREW:$PATH"
+# export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
