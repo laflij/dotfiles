@@ -104,6 +104,7 @@ symlink_dotfiles
 
 # Remove Ubuntu stuff
 rm -rf ~/.vimrc-ubuntu
+rm -rf ~/.gitconfig-ubuntu
 rm -rf ~/.bashrc
 
 # Source .bash_profile
