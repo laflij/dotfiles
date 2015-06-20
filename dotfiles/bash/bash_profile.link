@@ -1,10 +1,10 @@
 # .bash_profile
 
 # User aliases 
-alias del='rm -rf *~ \#*'
 alias ls='ls -GFh'
-# using gnucoreutils so it's gls
-# alias ls='gls --color'
+
+# Instead of aliasing del make a funciton to move to trash 
+del() { mv "$@" ~/.Trash/; }
 
 # Application aliases for MAC OS X
 # to be added later
