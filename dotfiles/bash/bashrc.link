@@ -129,30 +129,5 @@ export LD_LIBRARY_PATH=/usr/local/cuda-6.5/lib64:$LD_LIBRARY_PATH
 
 # Git prompt completion
 source ~/.git-prompt.sh
-PS1="\u@${COMPUTER} \W $ "
-
-if [ __git_ps1 -a hg ]
-then
-    function be_get_branch {
-	local dir="$PWD"
-	local vcs
-	local nick
-	while [[ "$dir" != "/" ]]; do
-	    for vcs in git hg; do
-		if [[ -d "$dir/.$vcs" ]] && hash "$vcs" &>/dev/null; then
-		    case "$vcs" in
-			git) __git_ps1 "${1:-(%s) }"; return;;
-			hg) nick=$(hg branch 2>/dev/null);;
-		    esac
-		    [[ -n "$nick" ]] && printf "${1:-(%s) }" "$nick"
-		    return 0
-		fi
-	    done
-	    dir="$(dirname "$dir")"
-	done
-    }
-    
-    export GIT_PS1_SHOWDIRTYSTATE=yes
-    export PS1="\u@${COMPUTER} \W \$(be_get_branch "$2") $ ";
-fi
-# -------------------------------------------------------------
+GIT_PS1_SHOWUPSTREAM="auto"
+PS1='\u@\h \W$(__git_ps1 " (%s) ")\$ '
