@@ -25,6 +25,10 @@
 *.tar
 *.zip
 
+# Python output 
+# -----
+*.dump
+
 # Latex 
 # -----
 *.synctex.gz
@@ -43,6 +47,10 @@
 *.bbl
 *.blg
 *.nlo
+
+# VIM 
+# -----
+*.swp
 
 # Logs and databases
 # ------------------
