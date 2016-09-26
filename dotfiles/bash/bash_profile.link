@@ -10,6 +10,7 @@ del() { mv "$@" ~/.Trash/; }
 # to be added later
 
 # Anaconda Python
+# export PATH="/Users/laflij2/Software/anaconda/bin:$PATH"
 alias conda='$HOME/Software/anaconda/bin/conda'
 alias activate='source $HOME/Software/anaconda/bin/activate'
 alias deactivate='source $HOME/Software/anaconda/bin/deactivate'
@@ -61,6 +62,7 @@ fi
 # Moltemplate
 export PATH="~/Software/moltemplate_2014-3-03/src:$PATH"
 # Homebrew
-export BREW="/usr/local/bin"
-export PATH="$BREW:$PATH"
+# export BREW="/usr/local/bin"
+# export PATH="$BREW:$PATH"
 # export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+
