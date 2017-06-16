@@ -13,7 +13,7 @@ let g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 --interaction=nonstopmode $*'
  
 let g:Tex_ViewRule_dvi = 'texniscope'
 let g:Tex_ViewRule_ps = 'Preview'
-let g:Tex_ViewRule_pdf = 'okular &'
+let g:Tex_ViewRule_pdf = 'Skim'
  
 let g:Tex_FormatDependency_ps  = 'dvi,ps'
 let g:Tex_FormatDependency_pspdf = 'dvi,ps,pspdf'
@@ -31,6 +31,9 @@ let g:Tex_FormatDependency_dvipdf = 'dvi,dvipdf'
 
 " Set multiple compile rule for bibtex 
 let g:Tex_MultipleCompileFormats='pdf'
+
+" Stop hopping out of the file
+let g:Tex_GotoError=0
 
 " For Latex files re-map gj and jk to j and k 
 :nnoremap k gk

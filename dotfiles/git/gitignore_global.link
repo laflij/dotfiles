@@ -28,6 +28,7 @@
 # Python output 
 # -----
 *.dump
+*.mat
 
 # Latex 
 # -----

@@ -1,22 +1,26 @@
 # .bash_profile
 
-# User aliases 
-alias ls='ls -GFh'
-
+# COMMANDS
 # Instead of aliasing del make a funciton to move to trash 
 del() { mv "$@" ~/.Trash/; }
 
 # Application aliases for MAC OS X
 # to be added later
 
+# ALIAS
+# User aliases 
+alias ls='ls -GFh'
+
 # Anaconda Python
-# export PATH="/Users/laflij2/Software/anaconda/bin:$PATH"
-alias conda='$HOME/Software/anaconda/bin/conda'
-alias activate='source $HOME/Software/anaconda/bin/activate'
-alias deactivate='source $HOME/Software/anaconda/bin/deactivate'
+# alias conda='$HOME/Software/anaconda/bin/conda'
+alias activate='source $HOME/Software/miniconda3/bin/activate'
+alias deactivate='source $HOME/Software/miniconda3/bin/deactivate'
 
 # VMD
 alias vmd="/Applications/VMD\ 1.9.1.app/Contents/vmd/vmd_MACOSXX86"
+
+# iCloudDrive
+alias iCloudDrive='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
 # -------------------------------------------------------------
 
 # Set up the terminal 
@@ -66,3 +70,8 @@ export PATH="~/Software/moltemplate_2014-3-03/src:$PATH"
 # export PATH="$BREW:$PATH"
 # export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 
+# added by Miniconda3 4.1.11 installer
+export PATH="/Users/laflij2/Software/miniconda3/bin:$PATH"
+
+# Getting vim-latex to work on osx 10.12
+export PATH="/Library/TeX/texbin:$PATH"
